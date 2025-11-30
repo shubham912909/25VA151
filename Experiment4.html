@@ -1,97 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Navigation Menu Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 4</title>
     <style>
-        /* Block Example */
-        header {
-            background: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            display: block; /* block element */
-        }
-
-        /* Inline Example */
-        .inline-elements span {
-            display: inline;
-            margin-right: 15px;
-            color: blue;
-        }
-
-        /* Navigation Menu - Inline-block Example */
-        nav ul {
-            list-style: none;
-            background: #444;
-            padding: 10px;
-        }
-        nav ul li {
-            display: inline-block; /* inline-block elements */
-            margin-right: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            padding: 8px 12px;
-            background: #666;
-            border-radius: 4px;
-        }
-        nav ul li a:hover {
-            background: #999;
-        }
-
-        /* Float Example */
-        .float-box {
-            width: 30%;
-            height: 120px;
-            background: rgb(128, 208, 240);
-            float: left;
-            margin-right: 15px;
-            padding: 10px;
-        }
-
-        /* Clear Example */
-        .clear {
-            clear: both; /* stops floating elements */
-            padding: 10px;
-            background:rgb(238, 182, 144);
+        .output-box {
+            border :2px solid #131212;
+            padding :15px;
+            margin :20px;
+            border-radius :1px;
+            width: 40%;
         }
     </style>
 </head>
-
 <body>
+    <div class="output-box">
+        <h1><p align="center"><b>Hotel Room Booking Form</b></p></h1>
+        <form action="" align="center">
+        <label for="">Full Name:</label>
+        <input type="text"><br><br>
+        
+        <label for="">Email:</label>
+        <input type="text"><br><br>
 
-<header>
-    <h1>Navigation Menu Using CSS Display & Float</h1>
-</header>
+        <label for="">Phone:</label>
+        <input type="text"><br><br>
 
-<!---------------- Inline Elements ---------------->
-<section class="inline-elements">
-    <h3>Inline Example:</h3>
-    <span>Home</span>
-    <span>About</span>
-    <span>Contact</span>
-</section>
+        <label for="">Check-in Date:</label>
+        <input type="date" name="" id=""><br><br>
 
-<!---------------- Navigation Menu ---------------->
-<nav>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+        <label for="">Check-out Date:</label>
+        <input type="date" name="" id=""><br><br>
 
-<!---------------- Float Example ---------------->
-<div class="float-box">Box 1 (Float Left)</div>
-<div class="float-box">Box 2 (Float Left)</div>
-<div class="float-box">Box 3 (Float Left)</div>
+        <label for="">Room Type:</label>
+    <select>
+        <option>Single Room</option>
+        <option>Double Room</option>
+    </select><br><br>
 
-<!---------------- Clear Example ---------------->
-<div class="clear">
-    This section uses <strong>clear: both;</strong> to stop floating boxes above.
-</div>
+    <label for="">Number of Guests:</label>
+    <input type="number" id="" name=""><br><br>
+    
+    <label for="">Special Requests:</label><br>
+    <textarea name="" id="" rows="4" cols="50"></textarea><br><br>
 
+    <input type="submit" value="Book Now">
+    <input type="submit" value="Reset Form">
+        </form>
+    </div>
 </body>
 </html>
