@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ABES Desktop - Shubham Maurya</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url('https://wallpapercave.com/wp/wp7420707.jpg') no-repeat center center/cover;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+    }
+
+    /* Desktop Icons */
+    .icon {
+        width: 80px;
+        text-align: center;
+        margin: 20px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Taskbar */
+    .taskbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        background: rgba(0,0,0,0.7);
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        backdrop-filter: blur(4px);
+    }
+
+    .taskbar .start {
+        color: white;
+        font-weight: bold;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    /* Name Display */
+    .name-box {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0,0,0,0.6);
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+
+</head>
+<body>
+
+    <!-- Your name on top-right -->
+    <div class="name-box">Shubham Maurya</div>
+
+    <!-- Desktop Icons -->
+    <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+        <div>My Computer</div>
+    </div>
+
+    <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/888/888859.png">
+        <div>ABES Files</div>
+    </div>
+
+    <div class="icon">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png">
+        <div>Recycle Bin</div>
+    </div>
+
+    <!-- Taskbar -->
+    <div class="taskbar">
+        <div class="start">ABES</div>
+        <div style="color: #ccc;">Welcome, Shubham Maurya</div>
+    </div>
+
+</body>
+</html>
